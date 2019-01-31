@@ -1,0 +1,9 @@
+
+#Clousers and Callbacks
+
+- Callback function: 
+  Is a function that you give another function, to 
+  be run when the other function is finished!
+
+  The function you call (invoke), 'calls back' by 
+  calling the fubnction you gave it when it finishes!
