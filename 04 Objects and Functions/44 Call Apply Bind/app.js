@@ -50,6 +50,7 @@ console.log(person.getFullName.apply(person2));
 
 
 // #-> Function Currying
+// Function Currying: Creating a copy of a function but with some present perameters!
 // This have to do with the '.bind()'
 
 function multiply(a, b) {
