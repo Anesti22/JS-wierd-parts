@@ -1,0 +1,7 @@
+
+#-> More-on-Constructor-Functions.txt
+
+// How we set the prototype
+
+-  When you use a function construction it already sets the prototype for you!
+
