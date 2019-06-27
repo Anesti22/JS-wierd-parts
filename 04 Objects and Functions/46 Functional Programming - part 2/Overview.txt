@@ -1,4 +1,0 @@
-
-#-> Functional Programming - part 2
-	- Underscore.js (an open source education)
-	- Lodash https://lodash.com/
