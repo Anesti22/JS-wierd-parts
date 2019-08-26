@@ -42,19 +42,33 @@
 
 
 // Faking Namespaces
-var greet = 'Hello';
-var greet = 'Hola';
+// var greet = 'Hello';
+// var greet = 'Hola';
 
-console.log(greet);
+// console.log(greet);
 
 
-var english = {};
-var spanish = {};
+// var english = {};
+// var spanish = {};
 
-english.greetings = {}
+// english.greetings = {}
 
-english.greetings.greet = 'Hello';
-spanish.greet = 'Hola';
+// english.greetings.greet = 'Hello';
+// spanish.greet = 'Hola';
 
-console.log(english);
-console.log(spanish);
+// console.log(english);
+// console.log(spanish);
+
+
+// JSON Javascript Object Notation and ObjectS Literal
+
+var objectLitersal = {
+    firstname: 'Nesti',
+    isAProgrammer: true
+}
+
+console.table(JSON.stringify(objectLitersal));
+
+var jsomValue = JSON.parse('{ "firstname" : "Nesti", "isAProgrammer" : true }')
+
+console.log(jsomValue);
