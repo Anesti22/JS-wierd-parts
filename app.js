@@ -20,22 +20,41 @@
 
 // Objects and Objects Literal
 
-var Nesti = {
-    firstname : "Nesti",
-    lastname : "Gjikoka",
-    address : {
-        street: "Main Street"
-    }
-};
+// var Nesti = {
+//     firstname : "Nesti",
+//     lastname : "Gjikoka",
+//     address : {
+//         street: "Main Street"
+//     }
+// };
 
 
-function greet(person) {
-    console.log('Hi ' + person.firstname);
-}
+// function greet(person) {
+//     console.log('Hi ' + person.firstname);
+// }
 
-greet(Nesti);
+// greet(Nesti);
 
 
-greet({
-    firstname: 'Maria',
-})
+// greet({
+//     firstname: 'Maria',
+// })
+
+
+// Faking Namespaces
+var greet = 'Hello';
+var greet = 'Hola';
+
+console.log(greet);
+
+
+var english = {};
+var spanish = {};
+
+english.greetings = {}
+
+english.greetings.greet = 'Hello';
+spanish.greet = 'Hola';
+
+console.log(english);
+console.log(spanish);
