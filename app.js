@@ -62,13 +62,76 @@
 
 // JSON Javascript Object Notation and ObjectS Literal
 
-var objectLitersal = {
-    firstname: 'Nesti',
-    isAProgrammer: true
+// var objectLitersal = {
+//     firstname: 'Nesti',
+//     isAProgrammer: true
+// }
+
+// console.table(JSON.stringify(objectLitersal));
+
+// var jsomValue = JSON.parse('{ "firstname" : "Nesti", "isAProgrammer" : true }')
+
+// console.log(jsomValue);
+
+//
+// Functions are Objects
+//
+//
+// First Class Fuctions: Everything you can do with other TYPES you can do with Functions
+//
+
+// function greet() {
+//     console.log('Hi');
+// }
+
+// greet.language = 'english';
+// console.log(greet.language);
+
+
+
+//
+// Function Statements and Function Expressions ..
+//
+
+// An Expression: Is a Unit of code That results in a value
+
+// var a;
+// a = 3;
+
+// A Statement:
+
+// if(a === 3) {
+
+// }
+
+
+// Function Statement
+greet();
+
+function greet() {
+     console.log('hi');
 }
 
-console.table(JSON.stringify(objectLitersal));
+// Function Expression
 
-var jsomValue = JSON.parse('{ "firstname" : "Nesti", "isAProgrammer" : true }')
+var anonymousGreet = function() {
+    console.log('hi');
+}
 
-console.log(jsomValue);
+anonymousGreet();
+
+
+function log(a) {
+   a();
+}
+
+// log('Hello');
+
+// log({
+//     greetings : 'hi'
+// });
+
+log(function() {
+    console.log('Hi');
+})
+
