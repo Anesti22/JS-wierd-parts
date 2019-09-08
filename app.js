@@ -104,7 +104,7 @@
 
 // }
 
-
+/*
 // Function Statement
 greet();
 
@@ -133,5 +133,54 @@ function log(a) {
 
 log(function() {
     console.log('Hi');
-})
+}) */
 
+//
+//BY VALUE - BY REFERENCE
+//
+
+// By value
+var a = 3;
+var b;
+
+b = a;
+
+a = 2;
+
+console.log(a);
+console.log(b);
+
+// By Reference (All Objects, Includeing Functions)
+
+
+var c  = { greeting: 'hi'};
+var d;
+
+d = c;
+
+c.greeting = 'Hello'; // Mutate State
+
+
+console.log(c);
+console.log(d);
+
+
+// By reference (even as parapeters)
+
+function changeGreeting(obj) {
+    obj.greeting = 'Hola';
+}
+
+changeGreeting(d)
+
+console.log(c);
+console.log(d);
+
+
+// Equals Operator sets up a new memory space (new address)
+
+
+c = {greeting: 'Howdy'};
+
+console.log(c);
+console.log(d);
